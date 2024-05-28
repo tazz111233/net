@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">SPLITTER</h1>
+        <div class="calculator">
+            <div class="input-section">
+                <label for="bill">Bill</label>
+                <div class="input-container">
+                    <img src="images/icon-dollar.svg" class="icon" alt="dollar icon">
+                    <input type="number" id="bill" placeholder="0">
+                </div>
+
+                <label>Select Tip %</label>
+                <div class="tip-buttons">
+                    <button class="tip-button">5%</button>
+                    <button class="tip-button">10%</button>
+                    <button class="tip-button">15%</button>
+                    <button class="tip-button">25%</button>
+                    <button class="tip-button">50%</button>
+                    <button class="tip-button custom-tip">Custom</button>
+                </div>
+
+                <label for="people">Number of People</label>
+                <div class="input-container">
+                    <img src="images/icon-person.svg" class="icon" alt="person icon">
+                    <input type="number" id="people" placeholder="0">
+                </div>
+            </div>
+            <div class="output-section">
+                <div class="output tip-amount">
+                  <div>
+                    <p>Tip Amount</p>
+                    <span>/ person</span>
+                  </div>
+                    <p class="amount">$0.00</p>
+                </div>
+                <div class="output total-amount">
+                  <div>
+                    <p>Total</p>
+                    <span>/ person</span>
+                  </div>
+                    <p class="amount">$0.00</p>
+                </div>
+                <button class="reset-button">RESET</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

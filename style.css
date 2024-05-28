@@ -1,0 +1,184 @@
+/* Import the necessary fonts */
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+body {
+    background-color: #c5e4e7;
+    font-family: 'Space Mono', monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    letter-spacing: 10px;
+    color: #5e7a7d;
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.calculator {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 920px;
+    width: 100%;
+}
+
+.input-section, .output-section {
+    width: 48%;
+}
+
+label {
+    display: block;
+    color: #5e7a7d;
+    font-size: 14px;
+    margin-bottom: 5px;
+    font-weight: 700;
+}
+
+.input-container {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-container .icon {
+    position: absolute;
+    top: 35%;
+    left: 15px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px 15px 10px 45px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-family: 'Space Mono', monospace;
+    border: none;
+    background-color: #f3f9fa;
+    font-size: 24px;
+    color: #7f9c9f;
+    text-align: right;
+    box-sizing: border-box;
+    appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.tip-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tip-button, .custom-tip {
+    flex: 1 1 30%;
+    padding: 15px;
+    background-color: #00474b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+}
+
+.custom-tip {
+    background-color: #f3f8fb;
+    color: #7f9c9f;
+}
+
+.tip-button:hover, .custom-tip:hover {
+    background-color: #26c2ae;
+    color: white;
+}
+
+.output-section {
+    background-color: #00474b;
+    color: white;
+    border-radius: 15px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.output {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.output p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.output span {
+    color: #7f9c9f; /* Light grey color for "/ person" and "/ total" */
+}
+
+.output .amount {
+    font-size: 38px;
+    font-weight: 700;
+    margin-top: 5px;
+    text-align: right;
+    color: #26c2ae; /* Cyan color for the amount */
+}
+
+.reset-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #26c2ae;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.reset-button:hover {
+    background-color: #9fe8df;
+}
+
+@media (max-width: 768px) {
+    .calculator {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .input-section, .output-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .output-section {
+        padding: 20px;
+    }
+}
